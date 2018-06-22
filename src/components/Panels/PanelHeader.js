@@ -11,13 +11,13 @@ class PanelHeader extends Component {
     this.props.onSelect('default');
   }
   render() {
-    const { panelData } = this.props;
+    const { title } = this.props.panelData;
     return (
       <div className="PanelHeader">
         <div className="headline">
           <div className="back" onClick={(e) => this.clickHandler(e)}>
           <div className="arrow left"></div> Back</div>
-          <div className="title">{panelData.title}</div>
+          <div className="title">{title}</div>
         </div>
       </div>
     );

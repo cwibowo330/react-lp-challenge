@@ -6,11 +6,12 @@ import PanelHeader from './PanelHeader';
 class GenericPanel extends Component {
   render() {
     const { panelData, onSelect } = this.props;
+    const { img, title, greeting } = panelData;
     return (
       <div className="panel GenericPanel">
         <PanelHeader onSelect={onSelect} panelData={panelData}/>
-        <img src={panelData.img} alt={panelData.title} />
-        <p>{panelData.greeting}</p>
+        <img src={img} alt={title} />
+        <p>{greeting}</p>
       </div>
     );
   }

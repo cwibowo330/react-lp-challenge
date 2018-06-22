@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 
 class ChatBubble extends Component {
   render() {
+    const { bubbleClass, message } = this.props
     return (
       <div className="ChatBubble">
-          <div className={this.props.class}>
-            <p>{this.props.message}</p>
+          <div className={bubbleClass}>
+            <p>{message}</p>
           </div>
           <div className="clear"></div>
       </div>
@@ -15,7 +16,7 @@ class ChatBubble extends Component {
 }
 
 ChatBubble.propTypes = {
-  class: PropTypes.string.isRequired,
+  bubbleClass: PropTypes.string.isRequired,
   message: PropTypes.string.isRequired
 }
 

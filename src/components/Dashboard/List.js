@@ -12,13 +12,13 @@ class List extends Component {
   }
 
   render() {
-    const { data } = this.props;
+    const { id, img, title, desc } = this.props.data;
     return (
-      <li onClick={(e) => this.clickHandler(data.id)}>
-          <img src={data.img} alt={data.title} />
+      <li onClick={(e) => this.clickHandler(id)}>
+          <img src={img} alt={title} />
           <div className="desc">
-            <h2>{data.title}</h2>
-            <p>{data.desc}</p>
+            <h2>{title}</h2>
+            <p>{desc}</p>
           </div>
           <div className="arrow right"></div>
       </li>

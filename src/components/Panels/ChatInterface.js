@@ -20,7 +20,7 @@ class ChatInterface extends Component {
 
   render() {
     const convo = Object.keys(chatData.convo).map((key, idx) => {
-      return <ChatBubble key={idx} message={chatData.convo[key].message} class={chatData.convo[key].from} />
+      return <ChatBubble key={idx} message={chatData.convo[key].message} bubbleClass={chatData.convo[key].from} />
     })
     return (
       <div className="ChatInterface">

@@ -4,19 +4,18 @@ import './DefaultPanel.css';
 
 class DefaultPanel extends Component {
   render() {
-    const { panelData } = this.props;
+    const { title, message } = this.props.panelData;
     return (
       <div className="panel DefaultPanel">
-        <h1>{panelData.title}</h1>
-        <p>{panelData.message}</p>
+        <h1>{title}</h1>
+        <p>{message}</p>
       </div>
     );
   }
 }
 
 DefaultPanel.propTypes = {
-  panelData: PropTypes.object.isRequired,
-  onSelect: PropTypes.func
+  panelData: PropTypes.object.isRequired
 }
 
 export default DefaultPanel;
