@@ -1,0 +1,51 @@
+ul, h2, p {
+    padding: 0;
+    margin: 0;
+}
+.NavList {
+    width: 40%;
+    text-align: left;
+    display: inline-block;
+    background: #fff;
+    padding-bottom: 30px;
+}
+.NavList h1 {
+    font-size: 0.9rem;
+    margin-left: 1.0rem;
+}
+.NavList h2 {
+    font-size: 0.8rem;
+    margin: 0 0 0.2rem 0;
+    font-weight: bold;
+}
+.NavList li {
+    list-style: none;
+    margin: 2.0rem 0 0 0.5rem;
+}
+.NavList img {
+    display: inline-block;
+    width: 35px;
+    margin-top: 0.5rem;
+}
+.NavList .desc {
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+    margin-left: 1.0rem;
+}
+.NavList p {
+    font-size: 0.7rem;
+    color: #6d6a6a;
+}
+.NavList .arrow {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    vertical-align: top;
+    margin: 1.0rem 0 0 1.0rem;
+}
+.NavList .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}

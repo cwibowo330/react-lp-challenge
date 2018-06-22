@@ -1,0 +1,97 @@
+.ChatInterface .Chat {
+    height: 430px;
+    font-size: 0.9rem;
+}
+.ChatInterface form {
+    border: 1px solid #ccc;
+}
+.ChatInterface input[type=text] {
+    padding:5px; 
+    border: none;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 88%;
+    outline: none;
+    color: #6d6a6a;
+}
+.ChatInterface button {
+    padding:5px 15px; 
+    color: #ED676B;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    width: 10%;
+    outline: none;
+}
+.ChatInterface .bot {
+	position:relative;
+	padding:10px 20px;
+	background:#E5E5EA;
+	border-radius:25px;
+	color: black;
+    float: left;
+    margin: 10px 0 10px 10px;
+}
+.ChatInterface .clear {
+    clear: both;
+}
+.ChatInterface .bot:before {
+    content:"";
+    position:absolute;
+    z-index:2;
+    bottom:-2px;
+    left:-7px;
+    height:20px;
+    border-left:20px solid #E5E5EA;
+    border-bottom-right-radius: 16px 14px;
+    -webkit-transform:translate(0, -2px);
+}
+.ChatInterface .bot :after {
+    content:"";
+    position:absolute;
+    z-index:3;
+    bottom:-2px;
+    left:4px;
+    width:26px;
+    height:20px;
+    background:white;
+    border-bottom-right-radius: 10px;
+    -webkit-transform:translate(-30px, -2px);
+}
+
+.ChatInterface .customer {
+    position: relative;
+    padding: 10px 20px;
+    color: white;
+    background: #0B93F6;
+    border-radius: 25px;
+    float: right;
+    margin: 10px 10px 10px 0;
+}
+.ChatInterface .customer p {
+    color: #fff;
+}
+.ChatInterface .customer:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    bottom: -2px;
+    right: -7px;
+    height: 20px;
+    border-right: 20px solid #0B93F6;
+    border-bottom-left-radius: 16px 14px;
+    -webkit-transform: translate(0, -2px);
+}
+.ChatInterface .customer:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: -2px;
+    right: -56px;
+    width: 26px;
+    height: 20px;
+    background: white;
+    border-bottom-left-radius: 10px;
+    -webkit-transform: translate(-30px, -2px);
+}

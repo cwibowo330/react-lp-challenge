@@ -1,0 +1,34 @@
+.PanelHeader .headline {
+    background: #ED676B;
+    height: 50px;
+    color: #fff;
+    text-align: left;
+    position: relative;
+}
+.PanelHeader .headline .title {
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+    width: 100%;
+}
+.PanelHeader .headline .back {
+    font-size: 0.6rem;
+    position: absolute;
+    top: 11px;
+    left: 17px;
+    z-index: 10;
+}
+.PanelHeader .headline .arrow {
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 2px;
+    vertical-align: top;
+    position: absolute;
+    top: 5px;
+    left: -10px;
+}
+.PanelHeader .headline .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}

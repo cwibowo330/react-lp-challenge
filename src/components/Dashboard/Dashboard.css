@@ -1,0 +1,10 @@
+.Dashboard {
+    width: 100%;
+}
+.panel {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+}
