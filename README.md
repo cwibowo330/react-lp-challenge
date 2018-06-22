@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 In the project directory, you can run:
-
+### `npm install`
 ### `npm start`
 
 Runs the app in the development mode.<br>
@@ -17,7 +17,9 @@ You will also see any lint errors in the console.
     ├── App.js (Header.js and Dashboard.js)
         ├── components
         |     Header.js (Main top nav: logo/phone)
-        |     ├── Dashboard (Main App wrapper: NavList.js and Various Panels)
+        |     ├── Dashboard (Main App wrapper: NavList.js and Panels.)
+        |     |       ├── Based on 'selected' List item:
+        |     |           appData[selected] is passed to Panels as props
         |     ├── Panels (Default Panel, Generic Panel, Doctor Panel)
         ├── assets
             ├── imgs (includes svg imgs that are referenced in appData.js)
