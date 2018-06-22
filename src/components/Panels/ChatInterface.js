@@ -4,6 +4,20 @@ import ChatBubble from './ChatBubble';
 import { chatData } from '../../assets/chatData';
 
 class ChatInterface extends Component {
+  constructor() {
+    super();
+    this.handleChange = this.handleChange.bind(this);
+    this.state = {
+      value: ''
+    }
+  }
+
+  handleChange(e) {
+    this.setState({
+      value: e.target.value
+    })
+  }
+
   render() {
     const convo = Object.keys(chatData.convo).map((key, idx) => {
       return <ChatBubble key={idx} message={chatData.convo[key].message} class={chatData.convo[key].from} />
@@ -15,7 +29,7 @@ class ChatInterface extends Component {
         </div>
          <form>
             <label>
-                <input className="message" type="text" value='' />
+                <input className="message" type="text" value={this.state.value} onChange={this.handleChange} />
             </label>
             <button>Send</button>
          </form>
